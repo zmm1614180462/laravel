@@ -16,5 +16,9 @@ Route::get('/', function () {
     return Member::all();
 });
 
+Route::get('/login',function (){
+    return view('login');
+});
+
 
 
