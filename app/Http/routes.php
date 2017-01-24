@@ -15,5 +15,8 @@ use App\Entity\Member;
 Route::get('/', function () {
     return Member::all();
 });
+Route::get('/hello',function(){
+    return 'hello';
+});
 
 
