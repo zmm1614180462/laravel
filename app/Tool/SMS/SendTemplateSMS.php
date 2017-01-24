@@ -57,5 +57,5 @@ class SendTemplateSMS
        return $m3_result;
   }
 }
-
+//发送短信
 //sendTemplateSMS("18576437523", array(1234, 5), 1);

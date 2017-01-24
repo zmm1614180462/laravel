@@ -13,12 +13,15 @@
 use App\Entity\Member;
 
 Route::get('/', function () {
-    return Member::all();
+    return view('welcome');
 });
 
-Route::get('/login',function (){
-    return view('login');
-});
+Route::get('/login', 'View\MemberController@toLogin');
+
+Route::get('/register','View\MemberController@toRegister');
+
+Route::any('service/validate_code/create','Service\ValidateController@create');
+Route::any('service/validate_code/send','Service\ValidateController@sendSMS');
 
 
 
