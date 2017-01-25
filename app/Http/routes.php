@@ -17,11 +17,14 @@ Route::get('/', function () {
 });
 
 Route::get('/login', 'View\MemberController@toLogin');
+Route::get('/register', 'View\MemberController@toRegister');
 
-Route::get('/register','View\MemberController@toRegister');
-
+Route::get('/email','View\MemberController@mail');
+Route::any('service/validate_email', 'Service\ValidateController@validateEmail');
+Route::any('/service/register','Service\MemberController@register');
 Route::any('service/validate_code/create','Service\ValidateController@create');
 Route::any('service/validate_code/send','Service\ValidateController@sendSMS');
+
 
 
 

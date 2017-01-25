@@ -39,6 +39,8 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                <img width="120" height="120" src="/images/2.png" alt="">
+                    
             </div>
         </div>
     </body>
